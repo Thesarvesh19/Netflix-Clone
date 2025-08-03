@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>नेटफ्लिक्स सीरीज़ डाउनलोड</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="netflix.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <strong><h1>नेटफ्लिक्स</h1></strong>
+            </div>
+            <nav class="header-nav">
+                <a href="#" class="nav-link">असीमित टीवी शो और मूवी</a>
+                <a href="join1.html" class="btns join-now">अभी शामिल हों</a>
+                <a href="#" class="btns sign-in">साइन इन करें</a>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <h1 class="text-center pt-3">सभी नेटफ्लिक्स सीरीज़ यहाँ से डाउनलोड करें</h1><hr>
+        
+        <nav class="menu-bar text-center">
+            <button class="btn btn-outline-light" onclick="filterShows('all')">होम</button>
+            <button class="btn btn-outline-light" onclick="filterShows('comedy')">कॉमेडी</button>
+            <button class="btn btn-outline-light" onclick="filterShows('drama')">ड्रामा</button>
+            <button class="btn btn-outline-light" onclick="filterShows('thriller')">थ्रिलर</button>
+            <button class="btn btn-outline-light" onclick="filterShows('romance')">रोमांस</button>
+            <button class="btn btn-outline-light" onclick="filterShows('crime')">क्राइम</button>
+            <div id="dropmenu">
+            <button id="language-button" onmouseover="showLanguages()">भाषा</button>
+                <div id="language-dropdown">
+                    <ul>
+                    <li><a href="netflix.html" onclick="selectLanguage('English')">अंग्रेज़ी</a></li>
+                    <li><a href="hindi.html" onclick="selectLanguage('Hindi')">हिंदी</a></li>
+                    <li><a href="bengali.html" onclick="selectLanguage('Bengali')">बांग्ला</a></li>
+                    <li><a href="#" onclick="selectLanguage('Spanish')">स्पेनिश</a></li>
+                    <li><a href="french.html" onclick="selectLanguage('French')">फ्रेंच</a></li>
+                    <li><a href="german.html" onclick="selectLanguage('German')">जर्मन</a></li>
+                    <li><a href="#" onclick="selectLanguage('Italian')">इतालवी</a></li>
+                    <li><a href="#" onclick="selectLanguage('Portuguese')">पुर्तगाली</a></li>
+                    <li><a href="#" onclick="selectLanguage('Chinese')">चीनी</a></li>
+                    <li><a href="#" onclick="selectLanguage('Japanese')">जापानी</a></li>
+                    <li><a href="#" onclick="selectLanguage('Korean')">कोरियाई</a></li>
+                    <li><a href="#" onclick="selectLanguage('Arabic')">अरबी</a></li>
+                    </ul>
+                    </div>
+                    </div>
+        </nav><hr>
+        <div id="seriesContainer" class="row">
+            <div class="col-md-3 col-sm-12 mb-4 show-card comedy romance">
+                <div class="card">
+                    <img src="pics/1.webp" class="card-img-top" alt="मिसमैच्ड 2" height="250px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">मिसमैच्ड 2</h5>
+                        <a href="#" class="btn btn-watch">अभी देखें</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mb-4 show-card drama">
+                <div class="card">
+                    <img src="pics/2.webp" class="card-img-top" alt="कोटा फैक्टरी" height="250px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">कोटा फैक्टरी</h5>
+                        <a href="#" class="btn btn-watch">अभी देखें</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mb-4 show-card thriller comedy">
+                <div class="card">
+                    <img src="pics/3.webp" class="card-img-top" alt="स्क्विड गेम" height="250px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">स्क्विड गेम</h5>
+                        <a href="#" class="btn btn-watch">अभी देखें</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mb-4 show-card thriller">
+                <div class="card">
+                    <img src="pics/4.webp" class="card-img-top" alt="स्ट्रेंजर थिंग्स" height="250px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">स्ट्रेंजर थिंग्स</h5>
+                        <a href="#" class="btn btn-watch">अभी देखें</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mb-4 show-card romance comedy">
+                <div class="card">
+                    <img src="pics/5.webp" class="card-img-top" alt="मिसमैच्ड 1" height="250px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">मिसमैच्ड 1</h5>
+                        <a href="#" class="btn btn-watch">अभी देखें</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mb-4 show-card drama thriller crime">
+                <div class="card">
+                    <img src="pics/6.webp" class="card-img-top" alt="सेक्टर 36" height="250px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">सेक्टर 36</h5>
+                        <a href="#" class="btn btn-watch">अभी देखें</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mb-4 show-card thriller romance crime" >
+                <div class="card">
+                    <img src="pics/MV5BOThjYTBkNmItNDM5Mi00MjJjLTliMGMtMGYzYzI0Nzk2MTkxXkEyXkFqcGc@.webp" class="card-img-top" alt="यह काली काली आँखें" height="250px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">यह काली काली आँखें</h5>
+                        <a href="#" class="btn btn-watch">अभी देखें</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mb-4 show-card thriller">
+                <div class="card">
+                    <img src="pics/8.png" class="card-img-top" alt="स्क्विड गेम 2" height="250px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">स्क्विड गेम 2</h5>
+                        <a href="#" class="btn btn-watch">अभी देखें</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mb-4 show-card crime">
+                <div class="card">
+                    <img src="pics/7.png" class="card-img-top" alt="वेडनेसडे" height="250px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">वेडनेसडे</h5>
+                        <a href="#" class="btn btn-watch">अभी देखें</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mb-4 show-card thriller drama">
+                <div class="card">
+                    <img src="pics/11.png" class="card-img-top" alt="वैंपायर डायरीज़" height="250px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">वैंपायर डायरीज़</h5>
+                        <a href="#" class="btn btn-watch">अभी देखें</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mb-4 show-card drama">
+                <div class="card">
+                    <img src="pics/9.png" class="card-img-top" alt="मनी हाइस्ट" height="250px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">मनी हाइस्ट</h5>
+                        <a href="#" class="btn btn-watch">अभी देखें</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mb-4 show-card crime">
+                <div class="card">
+                    <img src="pics/10.png" class="card-img-top" alt="क्वीन ऑफ़ टीयर्स" height="250px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">क्वीन ऑफ़ टीयर्स</h5>
+                        <a href="#" class="btn btn-watch">अभी देखें</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mb-4 show-card drama">
+                <div class="card">
+                    <img src="pics/12.png" class="card-img-top" alt="सैक्रेड गेम्स" height="250px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">सैक्रेड गेम्स</h5>
+                        <a href="#" class="btn btn-watch">अभी देखें</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mb-4 show-card crime">
+                <div class="card">
+                    <img src="pics/13.png" class="card-img-top" alt="फेम गेम" height="250px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">फेम गेम</h5>
+                        <a href="#" class="btn btn-watch">अभी देखें</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mb-4 show-card drama">
+                <div class="card">
+                    <img src="pics/14.png" class= "card-img-top" alt="Alpha" height="250px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">दिल्ली क्राइम</h5>
+                        <a href="#" class="btn btn-watch">अभी देखें</a>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 mb-4 show-card drama">
+                        <div class="card">
+                            <img src="pics/15.png" class="card-img-top" alt="Alpha" height="250px">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">नेवर हैव आई एवर</h5>
+                                <a href="#" class="btn btn-watch">अभी देखें</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 mb-4 show-card romance">
+                        <div class="card">
+                            <img src="pics/16.png" class="card-img-top" alt="Alpha" height="250px">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">मिसमैच्ड 3</h5>
+                                <a href="#" class="btn btn-watch">अभी देखें</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 mb-4 show-card drama">
+                        <div class="card">
+                            <img src="pics/19.png" class="card-img-top" alt="Alpha" height="250px">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">श्रीकांत</h5>
+                                <a href="#" class="btn btn-watch">अभी देखें</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 mb-4 show-card romance comedy">
+                        <div class="card">
+                            <img src="pics/18.png" class="card-img-top" alt="Alpha" height="250px">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">मिस्टर और मिसेज माहि</h5>
+                                <a href="#" class="btn btn-watch">अभी देखें</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 mb-4 show-card romance thriller">
+                        <div class="card">
+                            <img src="pics/20.png" class="card-img-top" alt="Alpha" height="250px">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">मिशन मजनू</h5>
+                                <a href="#" class="btn btn-watch">अभी देखें</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+                    <script src="netflix.js"></script>
+                    <footer>
+                        <div class="footer-content">
+                            <p>
+                                हमारी मूवी, टीवी शो, डॉक्युमेंट्री और अधिक के संग्रह के बारे में पढ़ें। <br>
+                                जितना चाहें, जब चाहें देखें।
+                            </p>
+                            <a href="join.html" class="btn join-now">अभी जुड़ें</a>
+                        </div>
+                        <div class="footer-links">
+                            <p>मदद चाहिए? <a href="#">हमसे संपर्क करें</a> <br> इस वेबसाइट का विकास और प्रबंधन द सरवेश ® द्वारा किया गया है।</p>
+                        </div>
+                    </footer>
+                    </body>
+                    </html>
+                    

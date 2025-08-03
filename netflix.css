@@ -1,0 +1,225 @@
+body {
+    background: #8E0E00; 
+    background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00); 
+    background: linear-gradient(to right, #1F1C18, #8E0E00); 
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+.container {
+    margin-top: 30px;
+}
+.card {
+    background-color: #4d4855;
+    background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
+    border: none;
+}
+.card img {
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+}
+.card img:hover {
+    transform: scale(1.2);
+}
+.card-title {
+    font-size: 1.2rem;
+    color: white;
+}
+.btn-watch {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    transition: 0.3s;
+}
+.btn-watch:hover {
+    background-color: #b71c1c;
+}
+.menu-bar {
+    background: #8E0E00; 
+    background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00); 
+    background: linear-gradient(to right, #1F1C18, #8E0E00);
+    padding: 10px 0;
+    
+}
+.menu-bar button {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.menu-bar button:hover {
+    background-color: #ff0000;
+    color: white;
+}
+
+header {
+    background-color: #141414;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid red; 
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo h1 {
+    color: #e50914;
+    margin: 0;
+    font-size: 45px;
+    
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btns {
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+
+.btns.join-now {
+    background-color: #e50914; 
+}
+
+.btns.sign-in {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.btns.sign-in:hover{
+    color: red;
+}
+.btns:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+footer {
+    background-color: #141414;
+    padding: 20px 10px;
+    text-align: center;
+    border-top: 1px solid #333; 
+}
+
+.footer-content {
+    margin-bottom: 20px;
+}
+
+.footer-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #aaa; 
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background-color: #e50914;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #f40612; 
+    cursor: pointer;
+    border-radius: 0px;
+}
+
+.footer-links p {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+.footer-links a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+
+
+
+ #language-button{
+    float: left;
+    position: relative;
+}
+#language-dropdown {
+     position: absolute;
+    background-color: #f9f9f9bd;
+    border: 1px solid #f44a4a;
+    padding: 10px;
+    width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    display: none;
+    float: right;
+    margin-top: 35px;
+    }
+    
+    #language-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    }
+    
+    #language-dropdown li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    
+    }
+    
+    #language-dropdown li:hover {
+    background-color: #ff1818;
+    }
+    
+    #language-dropdown a {
+    text-decoration: none;
+    color: #000;
+    }
+    
+    #language-dropdown a:hover {
+    color: #fff;
+    text-decoration: underline;
+    }
+
+#dropmenu{
+    float: right!important;
+    display: block;
+}
+
+
+    

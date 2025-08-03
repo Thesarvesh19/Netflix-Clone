@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Setup Page</title>
+  <style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 24px;
+  color: #e50914;
+  font-weight: bold;
+}
+
+header .signin {
+  font-size: 16px;
+  text-decoration: none;
+  color: #333;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.setup-box {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.icon-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icon-group img {
+  width: 40px;
+  height: auto;
+}
+
+h2 {
+  font-size: 22px;
+  margin: 20px 0;
+}
+
+p {
+  font-size: 16px;
+  margin: 15px 0;
+  color: #555;
+}
+
+.next-button {
+  background-color: #e50914;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.next-button:hover {
+  background-color: #d40813;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>NETFLIX</h1>
+      <a href="#" class="signin">Sign In</a>
+    </header>
+    <main>
+      <div class="setup-box">
+        <div class="icon-group">
+          <img src="pics/laptop.png" alt="Laptop" height="200px" width="300px">
+          <img src="pics/desktop.png" alt="Desktop">
+          <img src="pics/mobile.png" alt="Mobile">
+        </div>
+        <h2>Finish setting up your account</h2>
+        <p>Netflix is personalised for you. Create a password to watch on any device at any time.</p>
+        <a href="join next.html" class="next-button text-decoration none">Next</a>
+        <!-- <button class="next-button">Next</button> -->
+      </div>
+    </main>
+  </div>
+</body>
+</html>

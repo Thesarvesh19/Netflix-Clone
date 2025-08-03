@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Series Download</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="netflix.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <strong><h1>NETFLIX</h1></strong>
+            </div>
+            <nav class="header-nav">
+                <a href="#" class="nav-link">Unlimited TV Shows & Movies</a>
+                <a href="join now.html" class="btns join-now">Join now</a>
+                <a href="signin.html" class="btns sign-in">Sign In</a>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <h1 class="text-center pt-3">All Netflix Series Download From Here</h1><hr>
+        
+                    
+        <nav class="menu-bar text-center">
+            <button class="btn btn-outline-light" onclick="filterShows('all')">Home</button>
+            <button class="btn btn-outline-light" onclick="filterShows('comedy')">Comedy</button>
+            <button class="btn btn-outline-light" onclick="filterShows('drama')">Drama</button>
+            <button class="btn btn-outline-light" onclick="filterShows('thriller')">Thriller</button>
+            <button class="btn btn-outline-light" onclick="filterShows('romance')">Romance</button>
+            <button class="btn btn-outline-light" onclick="filterShows('crime')">Crime</button>
+            <div id="dropmenu">
+                <button id="language-button" onmouseover="showLanguages() ">Language</button>
+                <div id="language-dropdown" style="float: right;">
+                    <ul>
+                    <li><a href="netflix.html" onclick="selectLanguage('English')">English</a></li>
+                    <li><a href="hindi.html" onclick="selectLanguage('Hindi')">Hindi</a></li>
+                    <li><a href="bengali.html" onclick="selectLanguage('Bengali')">Bengali</a></li>
+                    <li><a href="french.html" onclick="selectLanguage('French')">French</a></li>
+                    <li><a href="german.html" onclick="selectLanguage('German')">German</a></li>
+                    <li><a href="#" onclick="selectLanguage('Italian')">Italian</a></li>
+                    <li><a href="#" onclick="selectLanguage('Portuguese')">Portuguese</a></li>
+                    <li><a href="#" onclick="selectLanguage('Chinese')">Chinese</a></li>
+                    <li><a href="#" onclick="selectLanguage('Japanese')">Japanese</a></li>
+                    <li><a href="#" onclick="selectLanguage('Korean')">Korean</a></li>
+                    <li><a href="#" onclick="selectLanguage('Arabic')">Arabic</a></li>
+                    </ul>
+                    </div>
+            </div>
+        </nav><hr>
+        <div id="seriesContainer" class="row">
+            <div class="col-md-3 col-sm-12 mb-4 show-card comedy romance">
+                <div class="card">
+                    <img src="pics/1.webp" class="card-img-top" alt="Mismatched 2" height="250px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Mismatched 2</h5>
+                        <a href="vids/mismatched 2.mp4" class="btn btn-watch">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mb-4 show-card drama">
+                <div class="card">
+                    <img src="pics/2.webp" class="card-img-top" alt="Kota Factory" height="250px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Kota Factory</h5>
+                        <a href="vids/ytdl.canehill.info - TVF s Kota Factory Season 1 Official Trailer (720p).mp4" class="btn btn-watch">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mb-4 show-card thriller comedy">
+                <div class="card">
+                    <img src="pics/3.webp" class="card-img-top" alt="Squid Game" height="250px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Squid Game</h5>
+                        <a href="#" class="btn btn-watch">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mb-4 show-card thriller">
+                <div class="card">
+                    <img src="pics/4.webp" class="card-img-top" alt="Stranger Things" height="250px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Stranger Things</h5>
+                        <a href="#" class="btn btn-watch">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mb-4 show-card romance comedy">
+                <div class="card">
+                    <img src="pics/5.webp" class="card-img-top" alt="Mismatched 1" height="250px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Mismatched 1</h5>
+                        <a href="#" class="btn btn-watch">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mb-4 show-card drama thriller crime">
+                <div class="card">
+                    <img src="pics/6.webp" class="card-img-top" alt="Sector 36" height="250px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Sector 36</h5>
+                        <a href="#" class="btn btn-watch">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mb-4 show-card thriller romance crime" >
+                <div class="card">
+                    <img src="pics/MV5BOThjYTBkNmItNDM5Mi00MjJjLTliMGMtMGYzYzI0Nzk2MTkxXkEyXkFqcGc@.webp" class="card-img-top" alt="Alpha" height="250px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Yeh Kaali Kaali Aankhee</h5>
+                        <a href="#" class="btn btn-watch">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mb-4 show-card thriller">
+                <div class="card">
+                    <img src="pics/8.png" class="card-img-top" alt="Alpha" height="250px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Squid Game 2</h5>
+                        <a href="#" class="btn btn-watch">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mb-4 show-card crime">
+                <div class="card">
+                    <img src="pics/7.png" class="card-img-top" alt="Alpha" height="250px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Wednesday</h5>
+                        <a href="#" class="btn btn-watch">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mb-4 show-card thriller drama">
+                <div class="card">
+                    <img src="pics/11.png" class="card-img-top" alt="Alpha" height="250px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Vampire Diaries</h5>
+                        <a href="#" class="btn btn-watch">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mb-4 show-card drama">
+                <div class="card">
+                    <img src="pics/9.png" class="card-img-top" alt="Alpha" height="250px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Money Heist</h5>
+                        <a href="#" class="btn btn-watch">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mb-4 show-card crime">
+                <div class="card">
+                    <img src="pics/10.png" class="card-img-top" alt="Alpha" height="250px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Queen of Tears</h5>
+                        <a href="#" class="btn btn-watch">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mb-4 show-card drama">
+                <div class="card">
+                    <img src="pics/12.png" class="card-img-top" alt="Alpha" height="250px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Sacred Games</h5>
+                        <a href="#" class="btn btn-watch">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mb-4 show-card crime">
+                <div class="card">
+                    <img src="pics/13.png" class="card-img-top" alt="Alpha" height="250px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Fame Game</h5>
+                        <a href="#" class="btn btn-watch">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mb-4 show-card drama">
+                <div class="card">
+                    <img src="pics/14.png" class="card-img-top" alt="Alpha" height="250px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Delhi Crime</h5>
+                        <a href="#" class="btn btn-watch">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mb-4 show-card drama">
+                <div class="card">
+                    <img src="pics/15.png" class="card-img-top" alt="Alpha" height="250px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Never Have I Ever</h5>
+                        <a href="#" class="btn btn-watch">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mb-4 show-card romance">
+                <div class="card">
+                    <img src="pics/16.png" class="card-img-top" alt="Alpha" height="250px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Mismatched 3</h5>
+                        <a href="#" class="btn btn-watch">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mb-4 show-card drama">
+                <div class="card">
+                    <img src="pics/19.png" class="card-img-top" alt="Alpha" height="250px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Srikanth</h5>
+                        <a href="#" class="btn btn-watch">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mb-4 show-card romance comedy">
+                <div class="card">
+                    <img src="pics/18.png" class="card-img-top" alt="Alpha" height="250px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Mr and Mrs Maahi</h5>
+                        <a href="#" class="btn btn-watch">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mb-4 show-card romance thriller">
+                <div class="card">
+                    <img src="pics/20.png" class="card-img-top" alt="Alpha" height="250px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Mission Majnu</h5>
+                        <a href="#" class="btn btn-watch">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="netflix.js"></script>
+    <footer>
+        <div class="footer-content">
+            <p>
+                Read about our collection of movies, TV shows, documentaries, and more. <br>
+                 Watch as much as you want, anytime you want.
+            </p>
+            <a href="join.html" class="btn join-now">Join now</a>
+        </div>
+        <div class="footer-links">
+            <p>Need help? <a href="contactus.html">Contact us</a> <br> This website is developed and managed by The Sarvesh &reg;</p>
+        </div>
+    </footer>
+</body>
+</html>

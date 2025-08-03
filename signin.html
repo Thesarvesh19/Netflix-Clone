@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Netflix Help Center</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: #141414;
+            color: #f3f3f3;
+            font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            border-bottom: 1px solid #303030;
+        }
+
+        .logo {
+            color: #e50914;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .nav a {
+            color: #f3f3f3;
+            text-decoration: none;
+            margin-left: 20px;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .nav .sign-in {
+            background-color: #e50914;
+        }
+
+        .nav a:hover {
+            opacity: 0.8;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: center;
+            padding: 60px 20px;
+        }
+
+        .contact-container {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .contact-container h1 {
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        .contact-container p {
+            font-size: 16px;
+            color: #a0a0a0;
+        }
+
+        .search-form {
+            position: relative;
+            margin: 20px 0;
+            display: flex;
+        }
+
+        .search-input {
+            flex-grow: 1;
+            padding: 16px 20px;
+            font-size: 16px;
+            border: 1px solid #808080;
+            border-radius: 4px;
+            background-color: #303030;
+            color: #f3f3f3;
+        }
+
+        .search-input::placeholder {
+            color: #a0a0a0;
+        }
+
+        .search-button {
+            background-color: transparent;
+            border: none;
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        .search-button i {
+            color: #e50914;
+            font-size: 20px;
+        }
+
+        .quick-links {
+            margin-top: 40px;
+        }
+
+        .quick-links h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .link-item {
+            display: flex;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #303030;
+            color: #f3f3f3;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .link-item:hover {
+            color: #e50914;
+        }
+
+        .link-item i {
+            margin-right: 15px;
+            font-size: 18px;
+            width: 20px;
+            text-align: center;
+        }
+
+        .link-item span {
+            text-decoration: underline;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #141414;
+            border-top: 1px solid #303030;
+        }
+
+        .footer-language-selector {
+            display: flex;
+            align-items: center;
+            background-color: #303030;
+            padding: 8px 12px;
+            border-radius: 4px;
+        }
+
+        .footer-language-selector i {
+            color: #f3f3f3;
+            margin-right: 10px;
+        }
+
+        .language-select {
+            background-color: transparent;
+            color: #f3f3f3;
+            border: none;
+            outline: none;
+            font-size: 14px;
+        }
+
+        
+        .popup-notification {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #2b2b2b;
+            color: #fff;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .popup-notification.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="https://help.netflix.com" class="logo">NETFLIX</a>
+        <nav class="nav">
+            <a href="join now.html" class="nav-link">Join Netflix</a>
+            <a href="signin.html" class="nav-link sign-in">Sign In</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="contact-container">
+            <h1>Contact us</h1>
+            <p>Tell us more and we'll find the best solution for you</p>
+            <form class="search-form" onsubmit="handleSearch(event)">
+                <input type="text" id="searchInput" placeholder="Describe your issue" class="search-input">
+                <button type="submit" class="search-button">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </form>
+
+            <div class="quick-links">
+                <h2>Quick Links</h2>
+                <a href="https://help.netflix.com/en/node/100412" class="link-item">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Content Grievances in India</span>
+                </a>
+                <a href="https://www.netflix.com/password" class="link-item">
+                    <i class="fas fa-key"></i>
+                    <span>Reset password</span>
+                </a>
+                <a href="https://www.netflix.com/youraccount" class="link-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>Update email</span>
+                </a>
+                <a href="https://help.netflix.com/en/node/3175" class="link-item">
+                    <i class="fas fa-question-circle"></i>
+                    <span>Get help signing in</span>
+                </a>
+                <a href="https://www.netflix.com/youraccount" class="link-item">
+                    <i class="fas fa-credit-card"></i>
+                    <span>Update payment method</span>
+                </a>
+                <a href="https://help.netflix.com/en/node/44621" class="link-item">
+                    <i class="fas fa-film"></i>
+                    <span>Request TV shows or movies</span>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-language-selector">
+            <i class="fas fa-globe"></i>
+            <select class="language-select">
+                <option value="en">English</option>
+                <option value="hi">Hindi</option>
+            </select>
+        </div>
+    </footer>
+
+    <div id="popupNotification" class="popup-notification">
+        <p>Searching for <span id="searchTerm"></span>...</p>
+    </div>
+
+    <script>
+        function handleSearch(event) {
+            event.preventDefault(); 
+
+            const searchInput = document.getElementById('searchInput');
+            const searchTerm = searchInput.value;
+
+            if (searchTerm.trim() !== '') {
+                const popup = document.getElementById('popupNotification');
+                const popupTerm = document.getElementById('searchTerm');
+
+                popupTerm.textContent = `"${searchTerm}"`;
+                popup.classList.add('visible');
+
+                setTimeout(() => {
+                    popup.classList.remove('visible');
+                }, 3000);
+            }
+        }
+    </script>
+</body>
+</html>
+```
